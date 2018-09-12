@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Billing from "./Billing"
+import NavBar from "./NavBar"
 
 export default class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div style={{ display: "flex" }}>
+                <div className="main" style={{ display: "flex" }}>
+                <NavBar />
+                <div style={{ flex: 1 }}>
                     <Switch>
                         <Route
                             exact
@@ -15,6 +18,13 @@ export default class App extends Component {
                                 <Billing />
                             )}
                         />
+                            <Route
+                                exact
+                                path="/Billing"
+                                component={() => (
+                                    <Billing />
+                                )}
+                            />
                         <Route
                             render={() => {
                                 return (
@@ -38,6 +48,7 @@ export default class App extends Component {
                             }}
                         />
                     </Switch>
+                </div>
                 </div>
             </BrowserRouter>
         )

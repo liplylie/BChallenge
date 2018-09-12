@@ -1,0 +1,76 @@
+.navbar-nav > li{
+  padding-left:1em;
+  padding-right:1em;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: rgb(247,202,2) !important;
+}
+
+#userName {
+    color: white
+}
+
+.container {
+    display: flex;
+}
+
+.pageContainer {
+    margin: 4em;
+    margin-top: 6em;
+}
+
+.shipTable {
+    background-color: gray;
+    flex: 5 1 500px;
+}
+
+table {
+    /* cellspacing */
+  
+}
+th {
+    /* This covers the th elements */
+     width: 14.29vw
+}
+tr {
+    /* This covers the tr elements */
+   
+}
+th, td {
+    /* cellpadding */
+    padding: 0;
+}
+
+input[type=text] {
+    width: 20vw;
+    padding: 6px;
+    border: none;
+    border-bottom: 2px solid gray ;
+    margin-top: 8px;
+    font-size: 17px;
+    background: url("http://kodyrabatowe.wp.pl/img/ico/search_gr.png") top right no-repeat;
+}
+
+#searchIcon {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+@media only screen and (max-width: 1130px) {
+    #searchIcon {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    *{
+        font-size: 8px
+    }
+}
